@@ -1,2 +1,25 @@
 <?php
-print_r($_SERVER);
+ $dirname= dirname($_SERVER['SCRIPT_NAME']); //hangi klasörde olduğumuz.
+
+ $basename = basename($_SERVER['SCRIPT_NAME']);
+
+ $request_uri = str_replace([$dirname,$basename], [null],  $_SERVER['REQUEST_URI']);
+
+ echo $request_uri;
+
+/*
+
+//prag match kullanımı
+$url='/uye/tayfunerbilen';
+
+echo preg_match('@^/uye/([0-9a-zAZ])+@',$url,$parameters);
+print_r($parameters);
+*/
+require __DIR__.'/route.php';
+
+Route::run('/', function(){
+    echo 'merhaba dünya';
+
+});
+
+?>
