@@ -1,10 +1,10 @@
 <?php
 
-class Uyeler{
+class Uyeler extends Controller{
 
     public function index(){
 
-            echo 'uyeler index metodu çalıştı';
+        $this->view('uyeler');
 
     }
 }

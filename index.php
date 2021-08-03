@@ -16,11 +16,11 @@ echo preg_match('@^/uye/([0-9a-zAZ])+@',$url,$parameters);
 print_r($parameters);
 */
 require __DIR__.'/route.php';
-
+require __DIR__.'/controller.php';
 Route::run('/', function(){
     echo 'merhaba dünya';
 
 });
 Route::run('/uyeler','uyeler@index');
-Route::run('/uye/([0-9a-zAZ])','uye@index');
+Route::run('/uye/{url}','uye@index');
 ?>
