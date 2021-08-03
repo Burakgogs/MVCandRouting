@@ -9,6 +9,7 @@ class Controller
     }
     public function model($name)
     {
-        
+        require __DIR__ . '/model/' . strtolower($name) . '.php';
+        return new  $name();
     }
 }

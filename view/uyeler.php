@@ -12,5 +12,14 @@
    <input type="text" name="username" placehoder="Üyelerde arayın...">
    <button type="submit">Gönder</button>
    </form>
+
+<ul>
+    <?php foreach($users as $user):?>
+    <li>
+        <?=$user['name']?>
+    </li>
+    <?php endforeach;?>
+</ul>
+
 </body>
 </html>

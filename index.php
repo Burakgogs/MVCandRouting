@@ -15,6 +15,8 @@ $url='/uye/tayfunerbilen';
 echo preg_match('@^/uye/([0-9a-zAZ])+@',$url,$parameters);
 print_r($parameters);
 */
+require __DIR__.'/database.php';
+require __DIR__.'/model.php';
 require __DIR__.'/route.php';
 require __DIR__.'/controller.php';
 Route::run('/', function(){
