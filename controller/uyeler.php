@@ -7,5 +7,8 @@ class Uyeler extends Controller{
         $this->view('uyeler');
 
     }
+    public function post(){
+        print_r($_POST);
+    }
 }
 ?>

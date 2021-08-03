@@ -5,7 +5,7 @@
 
  $request_uri = str_replace([$dirname,$basename], [null],  $_SERVER['REQUEST_URI']);
 
- echo $request_uri;
+
 
 /*
 
@@ -22,5 +22,7 @@ Route::run('/', function(){
 
 });
 Route::run('/uyeler','uyeler@index');
+Route::run('/uyeler','uyeler@post','post');
 Route::run('/uye/{url}','uye@index');
+Route::run('/profil/sifre-degistir','profile/changepassword@index');
 ?>

@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    Üyeler Sayfası
+   <form action="" method="post">
+
+   <input type="text" name="username" placehoder="Üyelerde arayın...">
+   <button type="submit">Gönder</button>
+   </form>
 </body>
 </html>
