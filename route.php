@@ -14,8 +14,20 @@ class Route{
         $request_uri = self::parse_url();
         if(preg_match('@^'.$url.'$@',$request_uri,$parameters)){
 
-             echo 'eşleşti';
-             
+        if (is_callable($callback)){
+
+            call_user_func_array($callback,$parameters);
+        }
+        $controller = explode('@',$callback); 
+       
+        $controllerFile = __DIR__ . '/controller/' . strtolower($controller[0]).'.php';
+        if(file_exists($controllerFile)){
+
+            require $controllerFile;
+            call_user_func_array([new $controller[0],$controller[1]],$parameters);
+        }
+
+
         }
        
     }

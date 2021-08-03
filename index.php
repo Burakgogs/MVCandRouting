@@ -21,5 +21,6 @@ Route::run('/', function(){
     echo 'merhaba dünya';
 
 });
-
+Route::run('/uyeler','uyeler@index');
+Route::run('/uye/([0-9a-zAZ])','uye@index');
 ?>
