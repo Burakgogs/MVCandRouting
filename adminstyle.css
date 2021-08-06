@@ -1,0 +1,49 @@
+.btnAdd {
+    text-align: right;
+    width: 83%;
+    margin-bottom: 20px;
+  }
+  
+.arkaplan{
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(bg.jpg);
+
+}
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: .85em;
+  color: wheat;
+}
+div.dataTables_wrapper div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  color: wheat;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+  color: wheat;
+}.btn-success {
+  color: #fff;
+  background-color: #7f685c;
+  border-color: #111111;
+}
+.h2, h2 {
+color: wheat;
+  font-size: 2rem;
+}
+.table{
+--bs-table-bg: #7f685c;
+}
+.table>:not(:last-child)>:last-child>* {
+     border-bottom-color: #ffffff;
+}
+.bilgi{
+color:white;
+
+}.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #7f685c;
+  border-color: #0d6efd;
+}
